@@ -7,24 +7,25 @@
 }
 
 :root{
-  --primary-color: #D64933;
+  --primary-color: #7C7C7C;
   --secondary-color: #eee5e9;
-  --accent1-color: #92dce5;
-  --accent2-color: black;
+  --accent1-color: #2B303A;
+  --accent2-color: #92dce5;
 
-  --heading-font: 'Poppins', sans-serif;
+  --heading-font: 'Gabarito', sans-serif;
   --paragraph-font: 'Poppins', sans-serif;
 
-  --nav-background-color: #eee5e9;
-  --nav-link-color: #d64933;
+  --nav-background-color: #2B303A;
+  --nav-link-color: #eee5e9;
   --nav-hover-link-color: #92dce5;
-  --nav-hover-background-color: black;
+  --nav-hover-background-color: #7C7C7C;
 }
 
 body {
   font-family: var(--paragraph-font);
   max-width: 100%;
   padding: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,22 +34,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  /*margin: 1rem auto;*/
-	display: flex;
-  justify-content: space-between;
-  padding: 10px;
-	/*grid-template-columns: 120px 1fr 2fr;*/
-	align-items: center;
-	border-bottom: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: 1fr auto; /* Divide el header en dos columnas: una para el logo y otra para la navegación */
+  justify-content: space-between; /* Centra horizontalmente los elementos en el header */
+  align-items: center; /* Centra verticalmente los elementos en el header */
+  background-color: var(--nav-background-color);
+  padding: 20px;
 	
-  
-  background-color: var(--accent1-color);
 }
 
 .logo img {
-  margin: 0 0.25rem 0 1rem;
-	max-width: 900px;
-	height: auto;
+	max-width: 100%;
+	
 }
 
 p {
@@ -93,8 +90,8 @@ p {
   color: white;
   border: 1px solid #000;
   padding: 5px;
-  background-color: #20234e;
-  opacity: .8;
+  background-color: #2B303A;
+  opacity: .9;
 }
 
 .hero article {
@@ -134,9 +131,10 @@ p {
  }
 
  .navigation ul {
-  display: flex;
+  display: grid;
   list-style: none;
-  align-items: center;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
   margin: 0;
   padding: 0;
  }
@@ -150,7 +148,7 @@ p {
   margin-top: 1rem;
   padding-bottom: 9rem;
   padding-left: 2px;
-  background-color: #92dce5;
+  background-color: whitesmoke;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 550px 1fr;
@@ -176,13 +174,13 @@ p {
   font-size: 40px;
   text-align: center;
   align-self: start;
-  color: #D64933;
+  color: #2B303A;
   padding: 5px;
  }
 
  .header2 img {
   position: absolute;
-  width: 550px;
+  width: 300px;
   height: auto;
   top: 50%;
   left: 50%;
@@ -205,7 +203,7 @@ p {
   .paragraph2 {
     grid-column: 3/3;
     grid-row:1/2;
-    vertical-align: middle;
+    vertical-align:bottom;
   }
 
 /*-------SECCION 3 " ADVENTURE"----------*/
@@ -218,7 +216,7 @@ p {
   width: 100%;
   align-items: center;
   padding: 20px;
-  background-color: #92dce5;
+  background-color: whitesmoke;
   margin: 5px;
 }
 
@@ -228,7 +226,7 @@ p {
   font-size: 60px;
   text-align: center;
   align-self: start;
-  color: #D64933;
+  color: #2B303A;
   
  }
 
@@ -280,10 +278,11 @@ figcaption {
 
  footer {
   display: flex;
-  background-color: #eee5e9;
+  background-color: #2B303A;
   padding: 10px;
   justify-content: space-between;
   align-items: center;
+  color: #eee5e9;
 }
 
 .footer1 {
