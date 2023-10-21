@@ -6,7 +6,7 @@
     <title> Contact Rafting Travel</title>
     <meta name="author" content="Evelin Montaño">
     <meta name="description" content="Rafting Travel is a white water rafting company providing...">
-    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="styles/rafting.css">
 </head>
 <body>
     <header>
@@ -23,108 +23,108 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
-        <div class="contact-container">
+        <div class="container">
 
-            <div class="contact-info">
+            <div class="container-info-contact">
+                <h1>Contact Us</h1>
+
+                <div class="tabla-info">
+                    <table>
+                        <tr>
+                            <td>📍Address: Plaça Catarina Albert, 25560 Sort, Lleida, España</p></td>  
+                        </tr>
+
+                        <tr>
+                            <td>📧Email: Reservation@TravelRafting.com</p></td>  
+                        </tr>
+
+                        <tr>
+                            <td>☎️Phone: +549 (2804) 984-534</p></td>  
+                        </tr>
+                    </table>  
+                </div>
+
+                <div class="container-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11783.02066443726!2d1.1316104!3d42.4116583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a605dec692e217%3A0x59af785b36b4b182!2sLa%20Rafting%20Company!5e0!3m2!1ses!2sar!4v1697759993439!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div>
+
+            <div class="conteiner-workers">
 
                 <div class="img">
-                    <figure><img src="images/happy-worker1.png" alt="happyworker1 image1" width="180"> <figcaption>Kayak Instructor</figcaption></figure>
-                    <figure><img src="images/happy-worker2.png" alt="happyworker2 image2" width="180"> <figcaption>Our star rafting guide</figcaption></figure>
+                    <figure>
+                        <img src="images/happy-worker1.png" alt="happyworker1 image1" width="180">
+                        <figcaption>Kayak Instructor</figcaption>
+                    </figure>
                 </div>
 
-                <div class="ima">
-                    <figure><img src="images/happy-worker3.png" alt="happyworker2 image3" width="180"> <figcaption>Raft Supervisor</figcaption></figure>
+                <div class="img">
+                    <figure>
+                        <img src="images/happy-worker2.png" alt="happyworker2 image2" width="130">
+                        <figcaption>Our star rafting guide</figcaption></figure>
+                    </figure>
                 </div>
+
+                <div class="img">
+                    <figure>
+                        <img src="images/happy-worker3.png" alt="happyworker2 image3" width="130">
+                        <figcaption>Raft Supervisor</figcaption></figure>
+                    </figure>
+                </div>
+
             </div>
-        
-        
 
-            <div class="contact-form">
-                <h2>Contact Form</h2>
-                <form action="process_contact_form.php"  method="POST">
+            <div class="form-box">
+                <div class="text">
+                    <h1>Send Us A Message!</h1>
+                    <h4>If you send us a message, we'll aim to reply within 24 hours</h4>
+                </div>
 
-                    <div class="form-item">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-item">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+                <form>
 
-                    <div class="form-item">
-                        <p>Purpose:</p>
+                    <div class="form-items">
+                        <label for="nombre">Name:</label>
+                        <input type="text" placeholder="Type your name" name="nombre" id="nombre"> 
+                        
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Your email address" name="email" id="email">
                     </div>
 
-                    <div class="form-item position2">
-                        <label for="Reservation">Reservation Question:</label>
+                    <div class="radio">
+                        <label for="inquiry">General Inquiry</label>
+                        <input type="radio" name="inquiry" id="inquiry">
+
+                        <label for="reservation">Reservation Question</label>
+                        <input type="radio" name="reservation" id="reservation">
+
+                        <label for="suggestion">Website Suggestion</label>
+                        <input type="radio" name="suggestion" id="suggestion">
                     </div>
 
-                    <div class="position3">
-                        <input type="radio" id="Reservation" name="Subscribe">
+                    <div class="message">
+                        <label for="feedback">Message</label>
+                        <!--<label for="feedback">Message</label> ---->
+                        <textarea id="feedback" name="feedback" rows="4" placeholder="Write your message here .."></textarea>
                     </div>
 
-                    <div class="form-item position2">
-                        <label for="General">General Inquiry:</label>
+                    <div class="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to monthly newsletter</label>
                     </div>
+                    <button type="submit">Send</button>
 
-                    <div class="position3">
-                        <input type="radio" id="General" name="Subscribe">
-                    </div>
-
-
-                    <div class="form-item position2">
-                        <label for="Suggestion">Website Suggestion:</label>
-                    </div>
-
-                    <div class="position3">
-                        <input type="radio" id="Suggestion" name="Subscribe">
-                    </div>
-
-                    <div class="form-item">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required rows="5"></textarea>
-                    </div>
-
-
-
-                    <div class="form-item position">
-                        <label for="Subscribe">Please Subscribe me to the monthly newsletter!</label>
-                        <div class="position1">
-                            <input type="checkbox" id="Subscribe" name="Subscribe">
-                        </div>
-
-                    </div>
-
-                    <button type="submit">Send Message</button>
                 </form>
+                
             </div>
         </div>
-
-        <div class="contactinfo">
-            <h2 class="h2">Contact Information</h2>
-            <p>Email: <a href="mailto:www.hotmail.com">Reservation@TravelRafting.com</a></p>
-            <p>Phone: <a href="tel:+5492804987645">+549 (2804) 984-534</a></p>
-            <p> 📍Address: Plaça Catarina Albert, 25560 Sort, Lleida, España</p>
-        </div>
-
-        <div class="map">
-            <iframe src="https://www.google.com/maps/place/La+Rafting+Company/@42.4116583,1.1316104,15z/data=!4m6!3m5!1s0x12a605dec692e217:0x59af785b36b4b182!8m2!3d42.4116583!4d1.1316104!16s%2Fg%2F1tfy4w09?entry=ttu" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        
-       
     </main>
-
     <footer>
-            <p class="footer1">©2023 🌊 Raftin Travel co. 🌊 Evelin Montaño</p>
+            <p class="footer1">©2023 🌊 Raftin Travel co. 🌊 Evelin Montaño <a href="https://app.moqups.com/Bg3QZN4QtNVsTWUP4pw12k5KOce5FPMT/edit/page/ad6f65941" target="_blank">Wireframe Link</a></p>
             <nav class="sociallinks">
-                <a href="https://facebook.com"><img src="images/facebook.png" class="footer2" alt="Logo Facebook" width="18"></a>
-                <a href="https://twitter.com"><img src="images/twitter.png"  class="footer3" alt="Logo Twitter" width="18"></a>
-                <a href="https://instagram.com"><img src="images/instagram.png" class="footer4" alt="Logo Instagram" width="18"></a>
+                <a href="https://facebook.com"><img src="images/facebook.png"  alt="Logo Facebook" ></a>
+                <a href="https://twitter.com"><img src="images/twitter.png"   alt="Logo Twitter" ></a>
+                <a href="https://instagram.com"><img src="images/instagram.png"  alt="Logo Instagram" ></a>
             </nav>
     </footer>
 
