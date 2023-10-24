@@ -313,6 +313,20 @@ figcaption {
 
 }
 
+form {
+  border-bottom: 2px solid #92dce5;
+  border-top: 2px solid #92dce5;
+  border-left: 2px solid #92dce5;
+  border-right: 2px solid #92dce5;
+  margin-left: 80px;
+  margin-right: 60px ;
+  opacity: 1;
+}
+button {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
 .tabla-info {
   grid-column: 1/2;
   gap: 1px;
@@ -327,11 +341,14 @@ figcaption {
 .conteiner-workers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 
 .conteiner-workers img {
-  grid-column: 1/1;
-  grid-row: 1/1;
+  /*grid-column: 1/1;
+  grid-row: 1/1;*/
+  place-self: center;
+  justify-self: center;
 }
 
 /*-------------SEC. FORM BOX ---------------*/
@@ -487,11 +504,19 @@ button {
   background-color: #92dce5;
 }
 
+.call-to-action a {
+  color: #2B303A;
+}
+
 form, label {
   padding: 30px;
   
 }
 
+.container2 h1 {
+  font-size: 20px;
+  text-align: center;
+}
 
 
 
@@ -505,6 +530,9 @@ form, label {
 
 /* ------------SECCION 3 FOOTER-----------------*/
 
+a {
+  color: #eee5e9;
+}
 footer {
   display: flex;
   background-color: #2B303A;
